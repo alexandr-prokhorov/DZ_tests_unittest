@@ -84,35 +84,6 @@ class Teacher:
         """
         return f"Имя: {self.__name},\nОбразование: {self.__education}\nОпыт работы: {self.__experience} года"
 
-    def add_mark(self, student_name, mark):
-        """
-        Функция добавляет студента и поставленную ему оценку
-
-        :param student_name:  Имя студента
-        :param mark: оценка студенту
-        :return: возвращает информацию о поставленной оценке
-        """
-        return f"{self.__name} поставил оценку {mark} студенту {student_name}"
-
-    def remove_mark(self, student_name, mark):
-        """
-        Функция удаляет оценку студенту
-
-        :param student_name: имя студента
-        :param mark: оценка
-        :return: возвращает информацию об удаленной оценке
-        """
-        return f"{self.__name} удалил оценку {mark} студенту {student_name}"
-
-    def give_a_consultation(self, class_name):
-        """
-        Функция возвращает информацию о проведенной консультации учителя в классе
-
-        :param class_name: название класса
-        :return: возвращает информацию
-        """
-        return f"{self.__name} провел консультацию в классе {class_name}"
-
     @classmethod
     def dismiss_teacher(cls, teacher_name):
         """
